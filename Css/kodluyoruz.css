@@ -1,0 +1,84 @@
+
+/* İki kutu arasındaki mesafe -> Margin
+
+Direkt margin yazılması sonucu 4 taraftanda boşluk oluşmasına sebep oluyor.(Browserın kendi ayarladığı boşluklar sonucu hataya 
+sebebiyet verebiliyor.
+
+Body paddigine ve marginine 0 vererek browser boşluklarını kaldırabiliyoruz.
+
+Margin-bottom/top/left/right gibi özelliklerle düzenli boşluklar verebiliriz.
+
+float özelliği kutuların dizilimini kontrol etmemizi sağlar.( Ama sayfadaki her dizilimi de etkiler)
+
+Kutu içerisinde ki mesafe -> padding
+*/
+
+.left-bar{
+    width: 200px;
+    float:left;
+}
+
+.gradient{
+    background: linear-gradient(90deg,rgba(45,156,219,.6),rgba(155,81,224,.6));
+}
+
+.btn{
+    
+    padding:10px 20px;
+    border-radius: 25px;
+    color:white;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+
+}
+
+.card{
+    width: 20%;
+    float: left;
+    padding: 5%;
+    margin-right: 2%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    /* margin: 0 auto 0 auto; -> margin saat yönünde ilerler */
+}
+
+.content{
+    width: 800px;
+    float: left;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.box {
+    
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.bg-lightblue{
+    background-color: lightsteelblue;
+}
+
+.bg-darkblue{
+    background-color: rgb(56, 56, 129);
+}
+
+.bg-blue{
+    background-color: rgb(67, 178, 208);
+}
