@@ -3,7 +3,7 @@
 // butonların ve sayacin etiketleri üzerinden verilere erisildi.
 let counterDOM = document.querySelector("#counter");
 //Sayac degiskeni tanimlandi.
-let counter = 0;
+let counter = localStorage.getItem('counter') ? Number(localStorage.getItem('counter')) : 0
 let increaseDOM = document.querySelector("#increase")
 let decreaseDOM = document.querySelector("#decrease")
 
@@ -18,5 +18,6 @@ function clickEvent()
 {
     console.log(this.id)
    this.id == "increase" ? counter +=1 : counter -=1
+   localStorage.setItem('counter',counter)
    counterDOM.innerHTML = counter
 }
