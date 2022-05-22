@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kodluyoruz- Frontend</title>
-    <style>
+    <!-- <style>
         .textPrimary{
             color:blue;
         }
@@ -13,15 +14,55 @@
             color:red;
         }
         
-    </style>
+    </style> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+
 <body>
+    
+    <div id="alert"></div>
 
     <h1 id="greeting">Kodluyoruz-Frontend</h1>
     <h2 id="info"></h2>
-    <h3 id="counter">0</h3>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <form id="userForm">
+                    <div class="mb-3">
+                        <label class= "form-label"for="userName">Kullanici Adi</label>
+                        <input class="form-control" type="text" name="userName" id="userName">
+                    </div>
+                    <!--input name tagi muhakkak olmali, formun en önemli noktasi budur
+                        form methodlari default olarak get secilidir..
+                        fakat get methodu guvensizdir sifre mail gibi bilgiler post methodu ile
+                        gonderilmelidir-->
+                    <div class="mb-3">
+                        <label class= "form-label" for="score">Not Bilgisi</label>
+                        <input class="form-control" type="number" name="score" id="score">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                        <button type="submit" class="btn btn-success">Gonder</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-8 offset-sm-2 mt-4">
+                <ul class="list-group" id="userList">
+                    <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A list item
+                      <span class="badge bg-primary rounded-pill">14</span>
+                    </li> -->
+                  </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <h3 id="counter">0</h3>
     <button id="increase">Arttır</button>
-    <button id="decrease">Azalt</button>
+    <button id="decrease">Azalt</button> -->
 
     <!--<h2 id="title">Merhaba Dunya</h2>
     <ul id="list">
@@ -35,6 +76,10 @@
     </ul> -->
 
     <!--Çalışılacak js dosyası eklenir.-->
-    <script src="/JavaScript/alistirmalar/fonksiyonlarBolumSonuEgzersizi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="/JavaScript/alistirmalar/formlarIleBolumSonuEgzersizi.js"></script>
 </body>
+
 </html>
