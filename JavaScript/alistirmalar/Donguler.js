@@ -1,4 +1,5 @@
 //Dongulerle Calismak
+//For Dongusu
 
 let users= ["Lorem", "Ipsum", "Dolor"]
 
@@ -15,4 +16,19 @@ for (let i = 0; i<users.length ; i++){
     liDOM.innerHTML = users[i]
     //li elementleri userDOM'un içine eklendi.
     userListDOM.appendChild(liDOM)
+}
+
+//While Dongusu
+//Bir şey olana kadar ifadesi geçerlidir. 
+
+let counter = 0;
+while( counter <10) {
+    console.log(counter)
+    counter += 1;
+}
+
+let userName;
+while(!userName) {
+    userName = prompt("Kullanici adini giriniz: ")
+    console.log(userName)
 }
