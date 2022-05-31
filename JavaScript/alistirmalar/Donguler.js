@@ -21,14 +21,22 @@ for (let i = 0; i<users.length ; i++){
 //While Dongusu
 //Bir şey olana kadar ifadesi geçerlidir. 
 
-let counter = 0;
-while( counter <10) {
-    console.log(counter)
-    counter += 1;
-}
+// let counter = 0;
+// while( counter <10) {
+//     console.log(counter)
+//     counter += 1;
+// }
 
-let userName;
-while(!userName) {
-    userName = prompt("Kullanici adini giriniz: ")
-    console.log(userName)
-}
+// let userName;
+// while(!userName) {
+//     userName = prompt("Kullanici adini giriniz: ")
+//     console.log(userName)
+// }
+
+// forEach Dongusu
+//forEach array içerisinde kullanılır. For'un daha esnek bir yapısı vardır.
+
+const PRODUCTS  = ["Laptop", "Phone","Speaker","Desktop Pc","Server","Mouse","Keyboard"]
+
+PRODUCTS.forEach((product,index,array) => array[index] = `${product.toUpperCase()}`)
+console.log(PRODUCTS)
